@@ -16,5 +16,13 @@ A Python-based tool built with **ArcPy** to automate rigorous quality control fo
 ### 📊 Deliverables
 The tool automatically generates a **CSV Audit Report**, providing a clear list of "PASS/FAIL" status and specific error messages for immediate data remediation.
 
+| File Name | Geometry Type | Coordinate System | QC STATUS | Error Notes |
+| :--- | :--- | :--- | :--- | :--- |
+| CAPTOIL_WELL | Point | GCS_WGS_1984 | **FAIL** | Invalid Naming Format (Required: WK_YEAR_WELLS) |
+| PAXMA_2013_WELLS | Point | GCS_WGS_1984 | **FAIL** | Missing Attribute Fields: CLASS |
+| PETROLAST_2010_WELLS | Point | GCS_WGS_1984 | **PASS** | Data Clean & Compliant |
+| PINPANOIL_2017_WELLS | Point | GCS_WGS_1984 | **FAIL** | Null Data Detected: [Row 1 (OPERATOR is Null/Empty)] |
+| SEAGAS_2015_WELLS | Polygon | WGS_1984_UTM_Zone_52S | **FAIL** | Invalid Geometry (Required: Point, Actual: Polygon) |
+
 ![Automated Audit Report](detailed-qc-report)
 *Figure 1: Sample of the CSV Audit Report showing real-time validation logs and error detection.*

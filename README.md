@@ -14,4 +14,7 @@ A Python-based tool built with **ArcPy** to automate rigorous quality control fo
 * **Scalability:** Optimized to handle 10,000+ records in seconds using `arcpy.da.SearchCursor`.
 
 ### 📊 Deliverables
-The tool automatically generates a **CSV Audit Report**, providing a clear list of "PASS/FAIL" status and specific error messages for immediate data correction.
+The tool automatically generates a **CSV Audit Report**, providing a clear list of "PASS/FAIL" status and specific error messages for immediate data remediation.
+
+![Automated Audit Report](image_c1fa7c.png)
+*Figure 1: Sample of the CSV Audit Report showing real-time validation logs and error detection.*
